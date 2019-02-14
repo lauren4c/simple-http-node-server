@@ -1,0 +1,12 @@
+### Exercises
+
+>What is a Node module?
+A: A module contains reusable functions that, with `require`, can be used anywhere in a Node app.
+
+>What is the main difference between exports and module.exports?
+
+A: `module.exports` is an object that can be assigned to anything, using `require`. Methods and variables can be added to it directly. `Exports` is a direct reference to the `module.exports` and cannot be altered outside of the module.
+
+>Why is using exports recommended?
+
+A: Using `exports` is recommended because it does not allow variables or changes from anywhere but the module itself, which should keep bugs from appearing.
